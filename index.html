@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets/logo.png">
+<title>Portfolio Landing Page</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav id="sticky-nav">
+      <div>
+        <h1>My Portfolio</h1>
+      </div>
+      <ul>
+        <li><a href="#header" class="nav-link">Home</a></li>
+        <li><a href="#container" class="nav-link">Skills</a></li>
+        <li><a href="#container-2" class="nav-link">school</a></li>
+        <li><a href="#footer" class="nav-link">Experience</a></li>
+      </ul>
+    </nav>
+<header>
+    <div class="header" id="header">
+      <h1>Hi, Im Ravi Sumawanto</h1>
+      <h3>I'm Interencing to join to mobile developer or Web Developer</h3>
+      <h2>About Me</h2>
+      <h4>I am a Fresh Graduate S1 Informatics Engineering from Sam Ratulangi University Manado. I am interested in a position in the IT Division. I have experience in making android application for my final project. I take the initiative to improve so that I can advance my innovation in the IT department and enhance my interests in websites.</h4>
+      <ul class="wrapper">
+        <li class="icon facebook">
+          <a href="https://www.facebook.com/ravinever?locale=id_ID" class="fa fa-facebook"></a>
+        </li>
+        <li class="icon twitter">
+          <a href="https://x.com/ravi_sumawanto" class="fa fa-twitter"></a>
+        </li>
+        <li class="icon instagram">
+          <a href="https://www.instagram.com/ravixhuuu/" class="fa fa-instagram"></a>
+        </li>
+        <li class="icon linkedin">
+          <a href="https://www.linkedin.com/in/ravi-sumawanto-3481b014b/" class="fa fa-linkedin"></a>
+        </li>
+        <li class="icon whatsapp">
+          <a href="https://wa.me/6285341144179" class="fa fa-whatsapp"></a>
+        </li>
+        <li class="icon github">
+          <a href="https://github.com/RaviSumawanto" class="fa fa-github"></a>
+        </li>
+      </ul>
+    </div>
+    <img src="assets/profile-1.png">
+</header>
+
+<div class="container" id="container">
+    <h1>SKILLS</h1>
+    <ul>
+      <li><a href="#" onclick="showSection('microsoft')" data-section="microsoft">Microsoft</a></li>
+      <li><a href="#" onclick="showSection('adobe')" data-section="adobe">Adobe</a></li>
+      <li><a href="#" onclick="showSection('database')" data-section="database">Database</a></li>
+      <li><a href="#" onclick="showSection('framework')" data-section="framework">Framework</a></li>
+      <li><a href="#" onclick="showSection('pemograman')" data-section="pemograman">Pemograman language</a></li>
+    </ul>
+  <div class="grid-container">
+
+    <section id="microsoft" class="section">
+      <img class="gambar" src="assets/word.png" alt="word">
+      <img class="gambar" src="assets/excel.png" alt="excel">
+      <img class="gambar" src="assets/ppt.png" alt="ppt">
+    </section>
+    <section id="adobe" class="section" style="display: none;">
+      <img class="gambar" src="assets/photoshop.png" alt="ps">
+      <img class="gambar" src="assets/premiere.png" alt="pr">
+    </section>
+    <section id="database" class="section" style="display: none;">
+      <div class="firebase">
+      <img class="gambar" src="assets/firebase.png" alt="firebase">
+      <img class="gambar" src="assets/mysql.png" alt="mysql">
+    </div>
+    </section>
+    <section id="framework" class="section" style="display: none;">
+      <img class="gambar" src="assets/flutter.png" alt="flutter">
+      
+    </section>
+    <section id="pemograman" class="section" style="display: none;">
+      <img class="gambar" src="assets/html&css.png" alt="html & css">
+      <img class="gambar" src="assets/dart.png" alt="dart">
+    </section>
+  </div>
+</div>
+<div class="container-2" id="container-2">
+  <h1>SCHOOL</h1>
+  <h3>UNIVERSITAS SAM RATULANGI MANADO</h3>
+  <p>2016-2023 - IPK : 3.58</p>
+  <h1>ORGANIZATION</h1>
+  <h3>PPA (Pusat Pengembangan Anak)</h3>
+  <p>2008 - 2021</p>
+  <h3>KKN-121(Koordinator Tematik)</h3>
+  <p>2019</p>
+</div>
+<footer id="footer">
+  <h1>Experience</h1>
+  <ul>
+    <li>
+        <span>PLN (Persero) Modoinding</span>
+        <h4>(SEPTERMBER - NOVEMBER 2014)</h4>
+        <h4>Internship</h4>
+        <p>Assigned to help employees serve local residents in repairing electricity in an area, such as repairing electricity meters and helping to check the amount of electricity usage and meters for each house.</p>
+    </li>
+    <li>
+        <span>702 Cellular (Konter Service Hp & Komputer)</span>
+        <h4>(JANUARI - NOVEMBER 2020)</h4>
+        <h4>Employee</h4>
+        <p>Worked to help repair mobile phones & computers in the hardware and computer software section. And responsible for the sale of mobile phone components.</p>
+    <li>
+        <span>Petugas Kelompok Penyelenggara Pemungutan Suara (KPPS)</span>
+        <h4>(JANUARI - FEBRUARI 2024)</h4>
+        <h4>Part Time/(Komisi Pemilihan Umum)</h4>
+        <p>Responsible for the process of organizing voting on Election Day. Including careful and precise preparation and completion of tasks. </p>
+    </li>
+
+</ul>
+</footer>
+<script src="script.js"> 
+</script>
+</body>
+</html>

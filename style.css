@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+
+  nav {
+    background-color: #ffffff;
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    transition: 0.6s;
+    width: 100%;
+  }
+
+
+  nav h1{
+    color: #222222;
+    padding: 0 2rem;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li a {
+    color: #222222;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+  }
+
+
+
+  header {
+    padding: 16em 1em;
+    display:grid;
+    grid-template-columns: 66% auto;
+    text-align: center;
+    justify-content: center;
+    color: rgb(26, 26, 26);
+    background-image: url(assets/background1.jpg);
+    background-size: cover;
+  }
+
+  header h1 {
+    font-size: 50px;
+    color: #06b800;
+  }
+
+  header h3 {
+    color: #222222;
+  }
+
+
+ header img {
+    width: 250px;
+    height: auto;
+    justify-self:center;
+    filter: drop-shadow(10px 7px 15px gray);
+  }
+
+  .header {
+    width: 900px;
+  }
+
+  .header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+  }
+
+  .header ul li a {
+    padding: 8px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #313131;
+    color: #ffffff;
+  }
+  .header ul li a:hover {
+    opacity: 0.7;
+  }
+
+
+.container h1{
+  text-align: center;
+  
+
+}
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 1em;
+    background-image: url(assets/background2.jpg);
+  }
+
+  .container ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+
+
+
+  .container ul li a {
+    color: #222222;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    align-items: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 4rem;
+  }
+
+  .gambar {
+    padding: 0 50px;
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gambar:hover {
+    transform: scale(1.05);
+  }
+
+  
+
+  .caption {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+ #database {
+  display:grid;
+  grid-template-columns: 66% auto;
+ }
+
+.container-2 {
+  padding: 5em 1em;
+  text-align: center;
+  background-image: url(assets/background3.jpg);
+  background-size: cover;
+  color: #222222;
+}
+
+footer {
+  background-image: url(assets/background2.png);
+  padding: 2rem 0;
+}
+
+footer h1 {
+  text-align: center;
+  color: #181818;
+}
+
+footer ul {
+  
+  margin:0;padding:0;
+  display:grid;
+  list-style-type:none;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+}
+footer ul li {
+  padding: 2em;
+  color: #181818;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  
+}
+footer ul li span {
+  display:block;
+  font-size:1.4em;
+  margin-bottom:1em;
+  color: #181818;
+  font-weight: 600;
+}
+
+#footer ul li p {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* Mengubah ukuran item pada layar kecil */
+  .gambar {
+    padding: 10px;
+  }
+
+  header {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  
+  header img {
+    width: 400px;
+    height: auto;
+  }
+
+  .header {
+    width: 400px;
+  }
+
+  footer ul {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  /* Mengubah ukuran item pada layar kecil */
+  .header {
+    display: block;
+    width: 700px;
+  }
+}
+
+@media  screen and (max-width: 600px) {
+  header img {
+    width: 70%;
+  }
+
+  .header h1 {
+    font-size: 35px;
+  }
+
+  .header h3 {
+    font-size: 15px;
+  }
+
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .header {
+    font-size: 15px;
+    width: 350px;
+  }
+
+  .header ul li a {
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
+  }
+
+  .grid-container {
+    padding: 1rem 1rem;
+  }
+
+  nav ul li a {
+    color: #222222;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .container ul li {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  header {
+    padding: 10em 1em;
+  }
+
+  nav div h1 {
+    display: none;
+  }
+
+  nav {
+    padding: 25px 0;
+    align-items: center;
+  }
+}
